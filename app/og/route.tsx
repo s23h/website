@@ -1,10 +1,7 @@
 import { ImageResponse } from 'next/og'
 
-export const dynamic = 'force-dynamic';
-
 export function GET(request: Request) {
-  let url = new URL(request.url)
-  let title = url.searchParams.get('title') || 'Salman Hussain'
+  let title = 'Salman Hussain'
 
   return new ImageResponse(
     (
