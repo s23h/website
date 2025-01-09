@@ -1,42 +1,33 @@
-# Portfolio Blog Starter
+# The Personal Blog
 
-This is a porfolio site template complete with a blog. Includes:
+This project is a simple, yet elegant blog built using Next.js and hosted on GitHub Pages.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+## Features
 
-## Demo
+- Responsive design using Tailwind CSS
+- Static site generation with Next.js
+- Markdown support for easy content creation
+- Analytics integration with Vercel
 
-https://portfolio-blog-starter.vercel.app
+## Getting Started
 
-## How to Use
+To run this project locally:
 
-You can choose from one of the following two methods to use this repository:
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### One-Click Deploy
+## Deployment
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+This blog is automatically deployed to GitHub Pages using GitHub Actions. Any push to the `main` branch will trigger a new deployment.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+## License
 
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
-
-Then, run Next.js in development mode:
-
-```bash
-pnpm dev
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+This project is open source and available under the [MIT License](LICENSE).
