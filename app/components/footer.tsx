@@ -18,44 +18,46 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://x.com/salcooked"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">twitter</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://linkedin.com/in/salhus"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">linkedin</p>
-          </a>
-        </li>
-                <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
-          </a>
-        </li>
-      </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        views are my own (!)
-      </p>
+      <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between">
+        <ul className="font-sm flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+          <li>
+            <a
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://x.com/salcooked"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">twitter</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://linkedin.com/in/salhus"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">linkedin</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/rss"
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">rss</p>
+            </a>
+          </li>
+        </ul>
+        <p className="mt-4 text-sm text-neutral-500 hover:text-neutral-800 transition-colors duration-200 dark:text-neutral-400 dark:hover:text-neutral-200 md:mt-0">
+          views are my own <span className="font-mono">~</span>
+        </p>
+      </div>
     </footer>
   )
 }

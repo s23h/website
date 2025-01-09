@@ -82,7 +82,7 @@ export default function Blog({ params }) {
           }),
         }}
       />
-      <h1 className="title font-semibold text-2xl tracking-tighter">
+      <h1 className="title font-semibold text-2xl tracking-tighter text-neutral-900 dark:text-neutral-100">
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
@@ -90,7 +90,11 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
+      <article className="prose prose-neutral dark:prose-invert max-w-none
+        prose-p:text-neutral-600 dark:prose-p:text-neutral-400
+        prose-headings:text-neutral-900 dark:prose-headings:text-neutral-100
+        prose-h2:text-xl prose-h2:font-semibold prose-h2:tracking-tight prose-h2:mt-8 prose-h2:mb-4
+        prose-h3:text-lg prose-h3:font-medium prose-h3:tracking-tight prose-h3:mt-6 prose-h3:mb-3">
         <CustomMDX source={post.content} />
       </article>
     </section>

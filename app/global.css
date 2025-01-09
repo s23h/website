@@ -84,35 +84,35 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-5 text-neutral-600 dark:text-neutral-400 leading-relaxed;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 mt-8 mb-4;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200 mt-10 mb-4 pb-2 border-b border-neutral-200 dark:border-neutral-800;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-medium tracking-tight text-neutral-800 dark:text-neutral-200 mt-8 mb-3;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-medium tracking-tight text-neutral-700 dark:text-neutral-300 mt-6 mb-2;
 }
 
 .prose strong {
-  @apply font-medium;
+  @apply font-semibold text-neutral-900 dark:text-neutral-100;
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-6 my-6 text-neutral-600 dark:text-neutral-400;
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal pl-6 my-6 text-neutral-600 dark:text-neutral-400;
 }
 
 .prose > :first-child {
