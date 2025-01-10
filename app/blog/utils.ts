@@ -6,6 +6,7 @@ type Metadata = {
   publishedAt: string
   summary: string
   image?: string
+  locked?: boolean
 }
 
 function parseFrontmatter(fileContent: string) {
@@ -20,7 +21,16 @@ function parseFrontmatter(fileContent: string) {
     let [key, ...valueArr] = line.split(': ')
     let value = valueArr.join(': ').trim()
     value = value.replace(/^['"](.*)['"]$/, '$1') // Remove quotes
-    metadata[key.trim() as keyof Metadata] = value
+    const trimmedKey = key.trim() as keyof Metadata
+
+    // Handle boolean values
+    if (value.toLowerCase() === 'true') {
+      metadata[trimmedKey] = true as any
+    } else if (value.toLowerCase() === 'false') {
+      metadata[trimmedKey] = false as any
+    } else {
+      metadata[trimmedKey] = value as any
+    }
   })
 
   return { metadata: metadata as Metadata, content }
